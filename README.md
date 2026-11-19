@@ -19,7 +19,7 @@ Universidad de Palermo · 2º cuatrimestre 2026
 | `opt.tar.gz` | Directorio `/opt` (`/opt/scripts/backup_full.sh` y `/opt/particion`) |
 | `www_dir.tar.gz` | Partición `/www_dir` (sitio web: `index.php` y `logo.png`) |
 | `backup_dir.tar.gz` | Partición `/backup_dir` (backups generados por el script) |
-| `var.tar.gz.part_aa`, `var.tar.gz.part_ab` | Directorio `/var` dividido en partes de 20 MB |
+| `var.tar.gz.part_aa` … `var.tar.gz.part_ad` | Directorio `/var` dividido en 4 partes de 10 MB |
 
 ### Cómo volver a unir `/var`
 
