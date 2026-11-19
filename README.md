@@ -18,14 +18,18 @@ Universidad de Palermo · 2º cuatrimestre 2026
 | `etc.tar.gz` | Directorio `/etc` (hostname, red, fstab, crontab, SSH, Apache) |
 | `opt.tar.gz` | Directorio `/opt` (`/opt/scripts/backup_full.sh` y `/opt/particion`) |
 | `www_dir.tar.gz` | Partición `/www_dir` (sitio web: `index.php` y `logo.png`) |
-| `backup_dir.tar.gz` | Partición `/backup_dir` (backups generados por el script) |
-| `var.tar.gz.part_aa` … `var.tar.gz.part_ad` | Directorio `/var` dividido en 4 partes de 10 MB |
+| `backup_dir.tar.gz.part_aa`, `backup_dir.tar.gz.part_ab` | Partición `/backup_dir` (backups generados por el script), dividida en 2 partes |
+| `var.tar.gz.part_aa` … `var.tar.gz.part_ak` | Directorio `/var` dividido en 11 partes |
 
-### Cómo volver a unir `/var`
+### Cómo volver a unir `/var` y `/backup_dir`
+
+Los archivos se dividieron con `split` porque GitHub no acepta archivos grandes subidos desde la web. Para reconstruirlos:
 
 ```bash
 cat var.tar.gz.part_* > var.tar.gz
+cat backup_dir.tar.gz.part_* > backup_dir.tar.gz
 tar -xzf var.tar.gz
+tar -xzf backup_dir.tar.gz
 ```
 
 ## Resumen de lo realizado
