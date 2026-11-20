@@ -4,11 +4,10 @@ Universidad de Palermo · 2º cuatrimestre 2026
 
 ## Integrantes
 
-- [Nombre y Apellido 1]
-- [Nombre y Apellido 2]
-- [Nombre y Apellido 3]
-- [Nombre y Apellido 4]
-- [Nombre y Apellido 5]
+- Francisco Glaría Albán
+- Joel Agustin Vallejos
+- Tatiana Campo Villalba
+- Tomás Dodds Schaefer
 
 ## Contenido del repositorio
 
